@@ -49,7 +49,7 @@ body {
 .img-hero {
   position: absolute;
   bottom: 0;
-  right: -300px;
+  right: -291px;
 }
 
 .sewabtn {
@@ -62,10 +62,6 @@ body {
   border: none;
 }
 /* END OF HERO */
-
-#ourservices {
-  height: 428px;
-}
 
 .svc-container h1 {
   font-size: 24px;
@@ -90,48 +86,25 @@ body {
 
 /* END OF SVC */
 
-#section-whyus {
-  margin-top: 100px;
-  height: 308px;
-  margin-bottom: 100px;
+.card {
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-#section-whyus h1 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
-#section-whyus p {
-  font-size: 14px;
-}
-
-.card-body-whyus {
-  width: 268px;
-  height: 196px;
-  padding: 20px 30px 0px 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  line-height: 20px;
-}
-
-.card-body-whyus h1 {
+.card-tittle {
   font-size: 16px;
   font-weight: 700;
 }
 
-.card-body-whyus p {
+.card-text {
   font-size: 14px;
-}
-
-.card-body-whyus img {
-  padding-bottom: 10px;
+  width: 220px;
 }
 
 /* END OF CARD */
 
 #testimonial {
-  height: 438px;
   padding-top: 10px;
 }
 
@@ -140,27 +113,35 @@ body {
   font-weight: 700;
 }
 
-.card-testimonial {
+.item .card {
   height: 270px;
   width: 619px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   background-color: #f1f3ff;
   border-radius: 8px;
 }
 
-.card-content-testimonial p {
-  margin-top: 16px;
+.card-content-bintang {
+  width: 16px;
+}
+
+.testimonial-p {
   font-weight: 300;
   width: 415px;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
-  margin: 10px 0;
+  padding-top: 8px;
 }
 
-#testimonial span {
-  font-size: 14px;
-  font-weight: 400;
+.card-body {
+  padding-left: 0px;
+}
+
+.testimonial-img {
+  margin-left: 50px;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .carousel-control-next {
@@ -173,6 +154,35 @@ body {
   position: absolute;
   left: 530px;
   top: 300px;
+}
+
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 32px;
+  cursor: pointer;
+  top: 290px;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+  background: url(/img/carouselkiri.png) no-repeat scroll 0 0;
+  left: 610px;
+}
+.owl-carousel .next-slide {
+  background: url(/img/carouselkanan.png) no-repeat scroll 0px 0px;
+}
+
+.owl-carousel .prev-slide:hover {
+  opacity: 0.7;
+}
+.owl-carousel .next-slide:hover {
+  opacity: 0.7;
 }
 
 /* END OF CAROUSEL */
@@ -190,7 +200,7 @@ body {
 }
 
 .cta-card {
-  width: 1168px;
+  width: 100%;
   height: 326px;
   background-color: #0d28a6;
   border-radius: 13px;
@@ -208,3 +218,279 @@ body {
 }
 
 /* END OF CTA */
+
+#section-faq {
+  height: 344px;
+}
+
+#section-faq h1 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#section-faq p {
+  font-size: 14px;
+}
+
+#section-faq .accordion-item {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+
+/* END OF FAQ */
+
+#section-footer {
+  height: 300px;
+  padding-top: 130px;
+}
+
+#section-footer p {
+  margin-bottom: 20px;
+}
+
+#section-footer .link-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+.sosmed-footer {
+  padding-left: 0px;
+}
+
+.contact-footer p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.link-footer a {
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.sosmed-img-footer img {
+  margin-right: 16px;
+}
+
+/* END OF FOOTER */
+/* MEDIA QUERIES */
+
+@media (max-width: 991.98px) {
+  .img-hero {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+  }
+  .owl-carousel .prev-slide {
+    display: none;
+  }
+  .owl-carousel .next-slide {
+    display: none;
+  }
+  .copyright-footer {
+    margin: 0px;
+  }
+  .link-footer {
+    margin: 0px;
+  }
+  .contact-footer {
+    padding-left: 0px;
+  }
+  .card-text {
+    width: 700px;
+  }
+
+  .testimonial-p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-hero {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+  }
+  .owl-carousel .prev-slide {
+    display: none;
+  }
+  .owl-carousel .next-slide {
+    display: none;
+  }
+  .copyright-footer {
+    margin: 0px;
+  }
+  .link-footer {
+    margin: 0px;
+  }
+  .contact-footer {
+    padding-left: 0px;
+  }
+  .card-text {
+    width: 700px;
+  }
+  .testimonial-p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .img-hero {
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+  }
+
+  #hero h1 {
+    text-align: center;
+  }
+
+  #hero p {
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  #hero button {
+    margin-left: 30%;
+  }
+
+  #ourservices {
+    width: 100%;
+  }
+
+  #ourservices h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #ourservices p {
+    width: 100%;
+    text-align: center;
+  }
+
+  #ourservices .svc-img {
+    width: 100%;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+
+  #section-whyus h1 {
+    text-align: center;
+  }
+
+  #section-whyus .whyus-p {
+    text-align: center;
+  }
+
+  .owl-carousel .prev-slide {
+    display: none;
+  }
+  .owl-carousel .next-slide {
+    display: none;
+  }
+  .copyright-footer {
+    margin: 0px !important;
+  }
+  .link-footer {
+    margin: 0px !important;
+  }
+  .contact-footer {
+    padding-left: 0px !important;
+  }
+  .testi-card {
+    width: 10px;
+  }
+
+  .testimonial-p {
+    font-weight: 300;
+    width: 470px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-left: 150px;
+    text-align: center;
+  }
+
+  .testimonial-name {
+    padding-left: 250px;
+  }
+
+  .card-body {
+    padding-left: 0px;
+    padding-top: 0;
+  }
+
+  .testimonial-img {
+    padding-top: 10px;
+    margin-left: 270px;
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+  }
+  .card-content-bintang {
+    margin-top: 10px;
+    margin-left: 270px;
+  }
+
+  .section-p {
+    position: absolute;
+    left: -50px;
+  }
+
+  .section-btn {
+    position: relative;
+    bottom: -80px;
+  }
+
+  #section-cta .cta-card p {
+    width: 70%;
+    left: 60px;
+  }
+
+  #section-cta .cta-h1 {
+    margin-top: 0px !important;
+  }
+
+  #section-footer .copyright-footer {
+    padding-left: 30px !important;
+  }
+
+  #section-footer .copyright-footer p {
+    margin-bottom: 10px;
+  }
+
+  #section-footer .logo-footer {
+    margin-bottom: 10px;
+  }
+
+  #section-footer .link-footer {
+    padding-left: 30px !important;
+  }
+  #section-footer .contact-footer {
+    padding-left: 30px !important;
+  }
+
+  #section-footer .sosmed-footer {
+    padding-left: 30px !important;
+  }
+
+  #section-footer .sosmed-footer p {
+    margin-bottom: 10px;
+  }
+  #section-footer .sosmed-img-footer {
+    margin-bottom: 10px;
+  }
+
+  #section-footer .container {
+    padding-top: 150px !important;
+  }
+}
